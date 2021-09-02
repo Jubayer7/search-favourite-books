@@ -9,22 +9,26 @@
     <!-- CSS of Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="book.css">
 </head>
 
 <body>
     <h2 class="text-center text-success">Find your favourite Book</h2>
     <!-- search Area -->
     <div class="input-group mb-3 w-50 mx-auto">
-        <input id="input-area" type="text" class="form-control" placeholder="Books is here"
+        <input id="input-area" type="text" class="form-control" placeholder="Books are here"
             aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button onclick="searchButton()" class="btn btn-outline-secondary" type="button"
-            id="button-area">Search</button>
+        <button onclick="searchButton()" class="btn btn-outline-primary" type="button" id="button-area">Search</button>
     </div>
+    <!-- No rsult found -->
+    <div id="no-result" class="text-center text-danger">
+    </div>
+    <!-- Total result found -->
     <div id="result-found" class="text-center text-primary fw-bold">
-
     </div>
     <!-- Display result -->
-    <div id="load-result" class="row row-cols-1 row-cols-md-3 g-4">
+    <div id="load-result" class="row row-cols-1 row-cols-md-3 g-3">
     </div>
 
     <!-- JS of Boostrap -->

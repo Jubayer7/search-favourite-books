@@ -43,7 +43,7 @@ const loasResult = books => {
         <div class="card-body">
             <h5 class="card-title text-primary">${book.title}</h5>
             <p class="card-text text-success"> <span class="fw-bold ">Author Name: ${book.author_name}</span> </p>
-            <p class="card-text text-success"> <span class="fw-bold">Frist Publish Date: ${book.publish_date}</span> </p>
+            <p class="card-text text-success"> <span class="fw-bold">Publish year: ${book.publish_year}</span> </p>
         </div>`
         displayResult.appendChild(div);
     })

@@ -38,8 +38,8 @@ const loasResult = books => {
         const div = document.createElement('div')
         div.classList.add('col')
         div.innerHTML = `
-        <div class="card">
-        <img  src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top w-100 img-fluid" alt="..."/>
+        <div class="card w-80 h-80 ">
+        <img  src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top w-50 h-50 rounded mx-auto d-block pt-2" alt="..."/>
         <div class="card-body">
             <h5 class="card-title text-primary">${book.title}</h5>
             <p class="card-text text-success"> <span class="fw-bold ">Author Name: ${book.author_name}</span> </p>

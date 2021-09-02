@@ -12,7 +12,17 @@
 </head>
 
 <body>
-    <h2>Find your favourite Book</h2>
+    <h2 class="text-center text-success">Find your favourite Book</h2>
+    <!-- search Area -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="input-area" type="text" class="form-control" placeholder="Books is here"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchButton()" class="btn btn-outline-secondary" type="button"
+            id="button-area">Search</button>
+    </div>
+    <!-- Display result -->
+    <div id="load-result" class="row row-cols-1 row-cols-md-3 g-4">
+    </div>
 
     <!-- JS of Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

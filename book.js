@@ -10,14 +10,21 @@ const searchButton = () => {
 }
 
 const loasResult = books => {
+    console.log(books.length)
+    const resultFound = document.getElementById('result-found')
+    const div = document.createElement('div')
+    div.innerHTML = `
+    <p>Total result found: ${books.length}</p>`
+    resultFound.appendChild(div)
     const displayResult = document.getElementById('load-result')
+
     books.forEach(book => {
-        console.log(book);
+        // console.log(book);
         const div = document.createElement('div')
         div.classList.add('col')
         div.innerHTML = `
         <div class="card">
-        <img src="" class="card-img-top" alt="...">
+        <img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="..."/>
         <div class="card-body">
             <h5 class="card-title">${book.title}</h5>
             <p class="card-text"> <span class="fw-bold">Author Name: ${book.author_name}</span> </p>
